@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasir Media Production</title>
+    <link href="./images/yasirlogo.png" rel="icon" type="image/x-icon"/><!-- favicon -->
+    <link rel="stylesheet" href="./css/Contact.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    
+</head>
+<body>
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+ 
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"> <img src="./images/yasirlogo.png" style="width: 50px; height: auto;" alt="">  YASIR MEDIA PRODUCTION</div>
+    <ul class="links">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./Photography.html">PHOTOGRAPHY</a></li>
+      <li><a href="./Videography.html">VIDEOGRAPHY</a></li>
+      <li><a href="./Contact.html">CONTACT US</a></li>
+      <li><a href="./About Us.html">ABOUT US</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+
+
+
+
+
+    <div class="container">
+      <div class="row">  
+          <div style="padding-top: 10px;">        
+              <img src="./images/contact.png" alt="conatct Us image">              
+           </div>  
+      </div>
+    </div>
+
+
+    <div>
+       <center> <p class="text-center" style="font-weight: 700; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"">FEEL FREE TO CONTACT US</p></center>
+    </div>
+
+<br>
+<br>
+<br>
+
+
+    <section>
+      <div class="container">
+        <form action="https://formspree.io/f/mjvjzbzl" method="POST" id="my-form">
+    
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName">
+          </div>
+    
+          <div class="form-group">
+            <label for="latsName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="mobile" id="mobile" name="mobile no">
+          </div>
+    
+          <div class="form-group">
+            <label for="massage">Massage</label>
+            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+          </div>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="status"></div>
+    </section>
+          
+
+
+
+
+
+
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+    
+      <h3>Yasir<span>Media Production</span></h3>
+  
+      <p class="footer-links">
+      <a href="./index.html">Home</a>
+    |
+      <a href="./Videography.html">Vlog</a>
+    |
+      <a href="./index.html">Pricing</a>
+    |
+      <a href="./About Us.html">About</a>
+    |
+      <a href="./Contact.html">Contact</a>
+      </p>
+    
+      <p class="footer-company-name">YASIRMEDIAPRODUCTION &copy; 2021</p>
+      </div>
+    
+      <div class="footer-center">
+    
+      <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span></span> karachi, Pakistan</p>
+      </div>
+    
+      <div>
+      <i class="fa fa-phone"></i>
+      <p>03113421006</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>03433020812</p>
+        </div>
+    
+      <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">unlimitedshutters.today@gmail.com</a></p>
+      </div>
+    
+      </div>
+    
+      <div class="footer-right">
+    
+      <p class="footer-company-about">
+      <span>About the company</span>
+    YASIR MEDIA PRODUCTION is a Cinematographic website for couples, celebrities, artist &amp; Professionals.
+      </p>
+    
+      <div class="footer-icons">
+    
+      <a href="https://www.facebook.com/yasirmediaproduction" target="_blank"><i class="fab fa-facebook"></i></i></a>
+      <a href="https://www.instagram.com/yasir_media_production/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UC9i3wH3kRAeQwTpRZcqtSWw" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com/MediaYasir?s=09" target="_blank"><i class="fab fa-twitter" ></i></a>
+    
+      </div>
+    
+      </div>
+    
+      </footer>
+
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+        
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: red;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+        
+        #myBtn:hover {
+          background-color: #555;
+        }
+        </style>
+  
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+            <script src="./js/contact.js"></script>
+
+
+
+      <script src="https://kit.fontawesome.com/ed348f178c.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
