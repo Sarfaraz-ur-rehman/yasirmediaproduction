@@ -1,0 +1,127 @@
+
+
+/*---------------------------------------------*/
+/*Navigation*/
+/*---------------------------------------------*/
+
+
+
+ul.main-nav {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: #333 !;
+    font-size: small;
+}
+  
+ul.main-nav li {
+    float: right !important;
+  }
+  
+.js--main-nav li a {
+    display: block !important;
+    color: black !important;
+    text-align: center !important;
+    padding: 14px 16px !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid transparent !important;
+    padding-top: 20x !important;
+    padding-right: 30px !important;
+  }
+  
+.js--main-nav li a:hover {
+    background-color: none !important;
+    border-bottom: 2px solid red !important;
+
+}
+
+header {
+  background-color :#fff !important;
+  box-shadow: 0 2px 2px black !important;
+}
+
+.logo {
+    width: auto !important;
+    height: 50px !important;
+    float: left !important;
+    margin-top: none !important;
+    margin-left: 70px !important;
+}
+
+.logo-black {
+    display: none !important;
+    width: auto !important;
+    height: auto !important;
+    float: left !important;
+    margin: 5px 0 !important;
+}
+
+/* mobile navi */
+
+.mobile-nav-icon {
+    float: right !important;
+    margin-top: 30px !important;
+    cursor: pointer !important;
+    display: none !important;
+}
+
+.mobile-nav-icon i {
+    font-size: 200% !important;
+    color: #fff;
+}
+
+
+
+/* sticky navi */
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 2px 2px red !important;
+    z-index: 9999 !important;
+}
+
+.sticky .main-nav {
+    margin-top: 18px !important;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0 !important;
+    color: #555 !important;
+}
+
+.sticky .logo {
+    display: none !important;
+}
+
+.sticky .logo-black {
+    display: block !important;
+}
+
+
+  /* --------video--------- */
+h2 {
+    text-shadow: 2px 2px red; 
+    text-align: center;
+    padding-top: 100px !important;
+    
+}
+
+.section_for_page{
+   display: -moz-stack !important;
+   display: -webkit-box !important;
+    
+}
+
+
+
+
+
+
+
+

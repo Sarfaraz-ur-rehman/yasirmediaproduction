@@ -1,0 +1,468 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 60px;
+	background-color: rgb(230, 52, 52);
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgb(255, 51, 51);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+             /* ------------------------nav-end---------------------------------- */
+			 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+			 *{
+				 box-sizing: border-box;
+				 padding: 0;
+				 margin: 0;
+			 }
+			 body{
+				 font-family: 'Playfair Display', serif;
+				 display: grid;
+				 background-color: #f4f4f4;
+				 align-content: center;
+				 min-height: 100vh;
+			 }
+			 section{
+				 display: grid;
+				 grid-template-columns: 1fr 1fr;
+				 min-height: 90vh;
+				 width: 85vw;
+				 margin: 0 auto;
+			 }
+			 .image{
+				 background: url("../images/yasirphoto.jpg") center/cover no-repeat;
+			 }
+			 .content{
+				 background: #fff;
+				 display: flex;
+				 justify-content: center;
+				 flex-direction: column;
+				 align-items: center;
+			 }
+			 .content h2{
+				 text-transform: uppercase;
+				 font-size: 36px;
+				 letter-spacing: 6px;
+				 opacity: 0.9;
+			 }
+			 .content span{
+				 height: 0.5px;
+				 width: 80px;
+				 background: #777;
+				 margin: 30px 0;
+			 }
+			 .content p{
+				 padding-bottom: 15px;
+				 font-weight: 300;
+				 opacity: 0.7;
+				 width: 60%;
+				 text-align: center;
+				 margin: 0 auto;
+				 line-height: 1.7;
+			 }
+			 .hiearchy{
+				 margin: 15px 0;
+			 }
+			 .hiearchy li{
+				 border: 0.5px solid #777;
+				 list-style: none;
+				 border-radius: 5px;
+				 padding: 10px 5px;
+				 width: 160px;
+				 text-align: center;
+			 }
+			 .hiearchy li a{
+				 text-transform: uppercase;
+				 color: #777;
+				 text-decoration: none;
+			 }
+			 .hiearchy li:hover{
+				 border-color: rgb(230, 52, 52);
+			 }
+			 .hiearchy li:hover a{
+				 color :rgb(230, 52, 52);
+			 }
+			 .vertical-line{
+				 height: 30px;
+				 width: 0.5px;
+				 background: #777;
+				 margin: 0 auto;
+			 }
+			 .icons{
+				 display: flex;
+				 padding: 15px 0;
+			 }
+			 .icons li{
+				 display: block;
+				 padding: 5px;
+				 margin: 5px;
+			 }
+			 .icons li i{
+				 font-size: 26px;
+				 opacity: 0.8;
+			 }
+			 .icons li i:hover{
+				 color: rgb(230, 52, 52);
+			 }
+			 
+			 
+			 /*****************/
+			 
+			 @media(max-width: 992px){
+				 section{
+					 grid-template-columns: 1fr;
+					 width: 100%;
+				 }
+				 .image{
+					 height: 100vh;
+				 }
+				 .content{
+					 height: 100vh;
+				 }
+				 .content h2{
+					 font-size: 20px;
+					 margin-top: 50px;
+				 }
+				 .content span{
+					 margin: 20px 0;
+				 }
+				 .content p{
+					 font-size: 14px;
+				 }
+				 .hiearchy li a{
+					 font-size: 14px;
+				 }
+				 .hiearchy{
+					 margin: 5px 0;
+				 }
+				 .hiearchy li{
+					 padding: 6px 10px;
+				 }
+				 .icons li i{
+					 font-size: 15px;
+				 }
+			 }
+			 
+
+
+   /*FOOTER*/
+
+   .main {
+	max-height: 550px;;
+	background-color: rgb(255, 255, 255);
+	color: white;
+	font-size: 38pt;
+	text-align: center;
+	line-height: 550px;
+}
+footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+.footer-distributed{
+    box-shadow: 0 1px 1px 0 rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+   
+    padding: 55px 50px;
+    margin-top: 80px;
+    background: rgb(0,0,0,0.7) url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.JmiLk_vUnCFpM1i-lgyrIQHaE8%26pid%3DApi&f=1") no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    
+  
+  }
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  rgb(230, 52, 52);
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #000000;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+
+
+
+  
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(230, 52, 52);
+}
+::selection{
+  background: rgb(230, 52, 52);
+}
+
+
+            /* --------------------section-part-------------------- */
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2:after {
+  display: block;
+  background-color: red;
+  width: 100px;
+  height: 2px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 30px;
+}
